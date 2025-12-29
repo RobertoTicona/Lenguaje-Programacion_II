@@ -9,7 +9,7 @@ class CalculadoraFactorial(Generic[T]):
     def calcular_factorial(self) -> int:
         n = int(self.numero)
         if n < 0:
-            raise ValueError("El factorial no esta definido para números negativos")
+            raise ValueError("El factorial no esta definido para números negativos: ")
         resultado = 1
         for i in range(1, n + 1):
             resultado *= i
@@ -26,3 +26,4 @@ def main():
 
 if __name__=="__main__":
     main()
+        
